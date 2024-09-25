@@ -1,0 +1,5 @@
+- name: Localhost Setup
+  hosts: local
+  become: yes
+  roles:
+    - nodejs
