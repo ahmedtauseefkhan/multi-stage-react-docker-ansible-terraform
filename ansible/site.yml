@@ -1,5 +1,13 @@
+- name: Deploy application and configure Nginx
+  hosts: instances
+  become: yes
+  roles:
+    - nginx
+    - nginx_port
+
 - name: Localhost Setup
   hosts: local
   become: yes
   roles:
     - nodejs
+    - nginx_port

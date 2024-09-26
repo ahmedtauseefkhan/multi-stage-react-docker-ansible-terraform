@@ -1,2 +1,8 @@
 [local]
 localhost ansible_connection=local
+
+[instances]
+ec2-instance ansible_host=
+
+[instances:vars]
+ansible_ssh_private_key_file=~/.ssh/id_rsa
